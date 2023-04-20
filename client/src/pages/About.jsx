@@ -3,7 +3,7 @@ import Layout from "../components/Layout/Layout.jsx";
 
 const About = () => {
   return (
-    <Layout>
+    <Layout title={"about us"}>
       <h1>About page</h1>
     </Layout>
   );
