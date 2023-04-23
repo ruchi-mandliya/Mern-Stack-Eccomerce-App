@@ -4,7 +4,6 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import "../../styles/AuthStyles.css";
-
 const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -14,6 +13,7 @@ const Register = () => {
   const [answer, setAnswer] = useState("");
   const navigate = useNavigate();
 
+  // form function
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -36,9 +36,10 @@ const Register = () => {
       toast.error("Something went wrong");
     }
   };
+  //   console.log(process.env.REACT_APP_API);
 
   return (
-    <Layout title="Register - Shopify">
+    <Layout title="Register - Ecommer App">
       <div className="form-container" style={{ minHeight: "90vh" }}>
         <form onSubmit={handleSubmit}>
           <h4 className="title">REGISTER FORM</h4>

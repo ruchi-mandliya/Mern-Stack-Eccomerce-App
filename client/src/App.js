@@ -10,9 +10,9 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/register" element={<Register />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/policy" element={<Policy />} />
         <Route path="*" element={<Pagenotfound />} />
       </Routes>

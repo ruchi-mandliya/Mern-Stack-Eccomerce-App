@@ -5,14 +5,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /* font-family: 'Poppins', sans-serif; */
 /* font-family: 'Playfair Display', serif; */
 
+/* //navbar css */
 .navbar {
-  padding: 15px;
   font-family: "Poppins", sans-serif;
-  font-size: 19px;
-  /* font-weight: 200; */
+  font-size: 17px;
   line-height: 26px;
   text-transform: uppercase;
   box-shadow: 0 8px 6px -6px gray;
@@ -33,6 +33,9 @@
   font-family: "roboto", sans-serif;
   letter-spacing: 3px;
 }
+/* =============================
+==========footer============= */
+
 .footer {
   color: white;
   padding: 25px;
@@ -55,6 +58,8 @@
   color: #ffefba;
   border-bottom: 1px solid #ffefba;
 }
+/* =================================
+======== page not found css ======= */
 .pnf {
   display: flex;
   min-height: 65vh;
@@ -83,6 +88,8 @@
   background-color: black;
   color: white;
 }
+/* ========================================= */
+/* =========contact us ========= */
 .contactus {
   margin: 0;
   padding: 0;
