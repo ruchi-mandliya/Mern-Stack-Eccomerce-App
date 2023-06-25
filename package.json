@@ -1,7 +1,6 @@
 {
   "name": "mern-stack-ecommerce-app",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "type": "module",
   "scripts": {
@@ -16,7 +15,7 @@
   "dependencies": {
     "bcrypt": "^5.1.0",
     "colors": "^1.4.0",
-    "concurrently": "^8.0.1",
+    "concurrently": "^8.2.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
@@ -26,5 +25,6 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.22",
     "slugify": "^1.6.6"
-  }
+  },
+  "description": ""
 }
