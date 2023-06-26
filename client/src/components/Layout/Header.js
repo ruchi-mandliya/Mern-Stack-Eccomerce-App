@@ -3,14 +3,12 @@ import { NavLink, Link } from "react-router-dom";
 import { useAuth } from "../../context/auth";
 import toast from "react-hot-toast";
 import SearchInput from "../Form/SearchInput";
-// import useCategory from "../../hooks/useCategory";
-// import { useCart } from "../../context/cart";
-import { Badge } from "antd";
+import useCategory from "../../hooks/useCategory";
 
 const Header = () => {
   const [auth, setAuth] = useAuth();
-  // const [cart] = useCart();
-  // const categories = useCategory();
+
+  const categories = useCategory();
   const handleLogout = () => {
     setAuth({
       ...auth,
@@ -61,13 +59,16 @@ const Header = () => {
                       All Categories
                     </Link>
                   </li>
-                  {/* {categories?.map((c) => (
-                  <li>
-                    <Link className="dropdown-item" to={`/category/${c.slug}`}>
-                      {c.name}
-                    </Link>
-                  </li>
-                  ))} */}
+                  {categories?.map((c) => (
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to={`/category/${c.slug}`}
+                      >
+                        {c.name}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </li>
 
